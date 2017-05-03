@@ -1,0 +1,68 @@
+.what-we-do_section {
+    padding: 0 10rem 0 16.5rem;
+    position: relative;
+
+    .box:before {
+        content: url("../img/icons/pen.png");
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-top: 20px;
+        margin-left: -30px;
+    }
+
+    .what-we-do_box-2:before {
+        content: url("../img/icons/heart.png");
+    }
+
+    .what-we-do_box-3:before {
+        content: url("../img/icons/share.png");
+    }
+
+    .what-we-do_box-4:before {
+        content: url("../img/icons/pp.png");
+    }
+
+    .what-we-do_box-5:before {
+        content: url("../img/icons/gear3.png");
+    }
+
+    .what-we-do_box-6:before {
+        content: url("../img/icons/brush.png");
+    }
+
+    .what-we-do_box-7:before {
+        content: url("../img/icons/voice.png");
+    }
+
+    .what-we-do_box-8:before {
+        content: url("../img/icons/speed.png");
+    }
+
+    .what-we-do_box-9:before {
+        content: url("../img/icons/clock.png");
+    }
+}
+
+.what-we-do_heading,
+.what-we-do_paragraph {
+    text-align: left;
+    padding: 0 2.5rem;
+    line-height: 1.6;
+}
+
+.what-we-do_paragraph {
+    font-size: 1.4rem;
+    color:  #777777;
+}
+
+.what-we-do_heading {
+    margin-bottom: 1.5rem;
+    color:  #333333;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.box {
+    padding: 30px 0;
+}

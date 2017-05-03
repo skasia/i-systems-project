@@ -1,0 +1,82 @@
+.clients {
+    background-color:  #1976d2;
+}
+
+.clients_heading,
+.clients_paragraph {
+    color: #fff;
+}
+
+.clients_main-img-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.clients_title {
+    margin-bottom: 2rem;
+}
+
+.clients_image-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.clients_client-name,
+.clients_client-appointment {
+    color: #fff;
+}
+
+.clients_client-name {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.clients_client-appointment {
+    font-size: 1.4rem;
+    margin-bottom: 3.5rem;
+}
+
+.clients_cyte-row {
+    margin: 0 1.5rem;
+}
+
+.clients_cyte {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border: 0.5px outset #fff;
+    padding: 1.5rem;
+
+    &:before {
+        content: url("../img/icons/left-arrow.png");
+        position: absolute;
+        border-radius: 50%;
+        top: 50%;
+        margin-top: -15px;
+        left: 0;
+        margin-left: -15px;
+        cursor: pointer;
+    }
+
+     &:after {
+        content: url("../img/icons/right-arrow.png");
+        position: absolute;
+        border-radius: 50%;
+        top: 50%;
+        margin-top: -15px;
+        right: 0;
+        margin-right: -15px;
+        cursor: pointer;
+    }
+}
+
+.clients_cyte_paragraph {
+    max-width: 920px;
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+}

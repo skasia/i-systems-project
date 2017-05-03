@@ -1,0 +1,46 @@
+.find-flights_heading {
+    font-family: PlayfairDisplay;
+    font-weight: 400;
+}
+
+.find-flights_paragraph {
+    margin-bottom: 3rem;
+}
+
+.find-flights_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.find-flights_icon {
+    flex: 1;
+    height: 15rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-1 {
+    background-image: url("../img/article/beach.png");
+}
+
+.icon-2 {
+    background-image: url("../img/article/ticket.png");
+}
+
+.icon-3 {
+    background-image: url("../img/article/money-group.png");
+}
+
+@media only screen and (max-width: 490px) {
+    .find-flights_container {
+        flex-direction: column;
+    }
+
+    .find-flights_icon {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+}
