@@ -1,0 +1,94 @@
+.pricing-table {
+    padding: 12rem 0 0;
+}
+
+.pricing-table_container {
+    padding: 4.5rem 0 0;
+}
+
+.pricing-table_title {
+    margin-bottom: 7rem;
+}
+
+.pricing-table_box {
+    padding: 3rem 4rem;
+    box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.1);
+    margin-bottom: 5rem;
+}
+
+.pricing-table_larger-box {
+    box-shadow: 2px 4px 25px 0px rgba(0,0,0,0.1);
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    top: 0;
+    margin-top: -4rem;
+    padding: 6rem 0 0;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #f95d5a;
+        left: 0;
+        top: 0;
+        margin-top: 22rem;
+    }
+}
+
+.pricing-table_box-title {
+    margin-bottom: 11.5rem;
+}
+
+.pricing-table_box-heading {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.pricing-table_box-paragraph {
+    font-size: 1.4rem;
+}
+
+.pricing-table_box-cost {
+    color: #2095f2;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.box-cost_amount {
+    font-size: 2.4rem;
+}
+
+.box-larger-cost_amount {
+    font-size: 3rem;
+}
+
+.pricing-table_offer-list {
+    margin-bottom: 5.5rem;
+}
+
+.pricing-table_larger-offer-list {
+    margin-bottom: 7rem;
+}
+
+.pricing-table_offer {
+    font-size: 1.4rem;
+    line-height: 3.5;
+    font-weight: 400;
+}
+
+.pricing-table_order-button {
+    @include btn($padding: 1.5rem 3.5rem, $minWidth: 120px);
+    background-color: #2095f2;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.pricing-table_larger-order-button {
+    @include btn($padding: 1.5rem 4rem, $minWidth: 120px, $shadow: 2px 4px 15px 0px rgba(0,0,0,0.2));
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: #ef5350;
+}

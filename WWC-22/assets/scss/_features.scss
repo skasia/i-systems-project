@@ -1,0 +1,66 @@
+.features {
+    background-color:  #1976d2;
+    color: #fff;
+}
+
+.col-md-6_right-side {
+    background-color:  #03a9f4;  
+    padding-right: 15rem;
+}
+
+.col-md-6_left-side {
+    padding-left: 15rem;
+}
+
+.feature-box {
+    padding: 3rem 0;
+
+    p {
+        color: #fff;
+        font-size: 1.4rem;
+    }
+}
+
+.feature_icon-box {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.feature_icon {
+    width: 45px;
+    height: 45px;
+    background-image: url("../img/icons/gear.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.feature_icon-2 {
+    background-image: url("../img/icons/gear2.png");
+}
+
+.feature_icon-3 {
+    background-image: url("../img/icons/laptop.png");
+}
+
+.feature_icon-4 {
+    background-image: url("../img/icons/earth.png");
+}
+
+.feature_icon-5 {
+    background-image: url("../img/icons/apple.png");
+}
+
+.feature_icon-6 {
+    background-image: url("../img/icons/photo.png");
+}
+
+.col-md-4_left-side {
+    background-color:  #03a9f4;   
+}
+
+.col-md-4_right-side {
+    background-color:  #1976d2;   
+}

@@ -1,0 +1,45 @@
+.portfolio_heading {
+    margin-bottom: 3rem;
+}
+
+.portfolio_paragraph {
+    margin-bottom: 7rem;
+}
+
+.portfolio_list-item {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio_list-item {
+    margin-bottom: 6rem;
+}
+
+.portfolio_button {
+    @include btn($padding: 2rem 2.5rem);
+    background-color:#2095f2;
+    display: block;
+    margin: 0 auto;
+}
+
+.portfolio_img_hover {
+    position: relative;
+}
+
+.portfolio_hidden-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 0.4rem;
+    margin-top: 0.4rem;
+    height: 97.5%;
+    width: 98%;
+    opacity: 0;
+    background-color: rgba(255,0,0,0.5);
+    transition: opacity 0.25s;
+
+}
+
+.portfolio_img_hover:hover > .portfolio_hidden-content {
+    opacity: 1;
+}
