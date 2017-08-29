@@ -1,0 +1,98 @@
+
+
+
+@media only screen and (max-width: 1070px) {
+
+   .mobile_travel-data {
+       padding: 6rem 0;
+        display: block;
+        background-color: #60206d;
+        text-align: center;
+   }
+
+   .mobile_travel-data_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+   }
+
+   .mobile_travel-data_input {
+       margin: 0 2rem;
+       @include input;
+       background-color: #60206d;
+       border-bottom: 2px solid #fff;
+
+       &:focus {
+           background-color: #fff;
+           color: #000;
+       }
+   }
+
+   .mobile_travel-data_travel-date {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+   }
+
+   .mobile_travel-data_date {
+       margin: 0 3rem;
+       color: #fff;
+       font-size: 16px;
+       letter-spacing: 3px;
+   }
+
+   .mobile_travel-data_form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 2rem;
+   }
+
+   .mobile_travel-data_people-amount {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        position: relative;
+        max-width: 10rem;
+
+        &:before {
+            position: absolute;
+            content: "";
+            height: 0;
+            width: 0;
+            border-top: 5px solid transparent;
+            border-right: 12px solid #fff;
+            border-bottom: 5px solid transparent;
+            left: 0;
+            top: 50%;
+            margin-top: -7px;
+        }
+
+        &:after {
+            position: absolute;
+            content: "";
+            height: 0;
+            width: 0;
+            border-top: 5px solid transparent;
+            border-left: 12px solid #fff;
+            border-bottom: 5px solid transparent;
+            right: 0;
+            top: 50%;
+            margin-top: -7px;
+        }
+   }
+
+   .mobile_travel-data_amount {
+       color: #fff;
+       margin: 0 1rem;
+       font-size: 16px;
+   }
+
+   .mobile_travel-data_button {
+       @include btn($color: #60206d);
+       background-color: #fff;
+       font-weight: 700;
+       font-size: 2rem;
+   }
+}

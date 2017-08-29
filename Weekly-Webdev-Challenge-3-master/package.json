@@ -1,0 +1,28 @@
+{
+  "name": "Kasia",
+  "version": "0.0.1",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build --production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "postcss-reporter": "^1.4.1",
+    "postcss-scss": "^0.1.9",
+    "stylelint": "^7.0.3"
+  },
+  "dependencies": {
+    "jquery": "~3.1.1",
+    "lodash": "^4.14.0"
+  }
+}

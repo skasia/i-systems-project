@@ -1,0 +1,90 @@
+.popular-destinations_paragraph {
+    margin-bottom: 3rem;
+}
+
+.popular-destinations_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+}
+
+.popular-destinations_images-box {
+    min-width: 300px;
+    position: relative;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+.popular-destinations_image {
+    padding: 1rem;
+    height: 20rem;
+    width: 20rem;
+    background-image: url("../img/article/photo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -10rem;
+    left: 50%;
+    margin-left: -10rem;
+}
+
+.popular-destinations_icon {
+    width: 5rem;
+    height: 4rem;
+    background-image: url("../img/article/photo-icon.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    margin-top: -2rem;
+    left: 50%;
+    margin-left: -2.5rem;
+}
+
+.popular-destinations_image_next-image {
+    background-image: url("https://cdn.pixabay.com/photo/2016/03/04/08/37/sea-shells-1235586_960_720.jpg");
+}
+
+.img-most-rotate {
+    transform: rotate(-10deg);
+}
+
+.img-medium-rotate {
+    transform: rotate(-5deg);
+}
+
+.popular-destinations_image-box_title {
+    position: absolute;
+    bottom: -20%;
+}
+
+.popular-destinations_images-box_heading {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color:  #585858;
+}
+
+.popular-destinations_button {
+    @include btn($shadow: none);
+    border: 2px solid #69157a;
+    background-color: #fff;
+    color: #69157a;
+    font-weight: 700;
+    font-size: 1.8rem;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.25s;
+
+    &:hover,
+    &:focus {
+        background-color: #69157a;
+        color: #fff;
+    }
+}
