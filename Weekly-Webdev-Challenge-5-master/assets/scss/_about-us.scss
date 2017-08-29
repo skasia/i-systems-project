@@ -1,0 +1,50 @@
+.about-us {
+    background-image: url("../img/banners/bg.png");
+    padding: 70px 0;
+}
+
+.about-us_heading {
+    text-align: left;
+}
+
+.about-us_paragraph {
+    text-align: left;
+}
+
+.about-us_container {
+    display: flex;
+    align-items: stretch;
+}
+
+.about-us_text-box {
+    text-align: left;
+    flex: 1;
+    color: $basicBg;
+    padding: 100px 0 100px 80px;
+}
+
+.about-us_image {
+    flex: 1;
+    background-image: url("../img/banners/img-2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 800px) {
+    .about-us_container {
+        flex-direction: column;
+    }
+
+    .about-us_text-box {
+        padding: 0 20px;
+    }
+
+    .about-us_heading {
+        text-align: center;
+    }
+
+    .about-us_paragraph {
+        text-align: center;
+    }
+}
