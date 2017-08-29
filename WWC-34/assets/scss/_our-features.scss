@@ -1,0 +1,93 @@
+.our-features-section {
+    padding: 10rem 0;
+    background: url("../img/article/technology.png"), #fbf8f1;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.our-features-section_heading,
+.our-features-section_paragraph {
+    text-align: center;
+    color:  #202242;
+}
+
+.our-features-section_heading {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+
+.our-features-section_paragraph {
+    font-size: 2.4rem;
+    margin-bottom: 8.5rem;
+}
+
+.our-features-section_container {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.our-features-section_box_icon {
+    width: 13rem;
+    height: 13rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-bottom: 6.8rem;
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 80%;
+        bottom: -30%;
+        transform: translate(-50%);
+        left: 50%;
+        background-color:  rgba(32, 34, 66, 0.5);
+    }
+}
+
+.our-features-section_box_heading {
+    font-family: Rockwell;
+    color: #f4d31f;
+    font-size: 3rem;
+    font-weight: 400; 
+    margin-bottom: 2.5rem;
+    white-space: nowrap;
+}
+
+
+.our-features-section_box {
+    max-width: 25%;
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+.icon-1 {
+    background-image: url("../img/article/SEO-04.png");
+}
+
+.icon-2 {
+    background-image: url("../img/article/SEO-29.png");
+}
+
+.icon-3 {
+    background-image: url("../img/article/SEO-32.png");
+}
+
+.icon-4 {
+    background-image: url("../img/article/Technology-18.png");
+}
+
+@media only screen and (max-width: 1040px) {
+    .our-features-section_container {
+        justify-content: center;
+    }
+
+    .our-features-section_box {
+        min-width: 300px;
+        margin-bottom: 2rem;
+    }
+}

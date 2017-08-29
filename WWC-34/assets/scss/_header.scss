@@ -1,0 +1,268 @@
+.header_nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #fcfcfc;
+}
+
+.header_logo {
+    font-family: Rockwell;
+    color:  #202242;
+    padding-left: 3rem;
+    position: relative;
+
+    &:before {
+        content: url("../img/icons/logo-icon-lower.png");
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.header_logo_name {
+    font-size: 3rem;    
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.header_mobile-icon-menu {
+    display: none;
+}
+
+.header_list-item {
+    display: flex;
+    padding: 6rem 0;
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background-color:  #ebebeb;
+        right: 0;
+        margin-right: -2rem;
+        top: 0;
+    }
+}
+
+.header_item-link {
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color:  #202242;
+}
+
+.active-link {
+    color: #ffe13e;
+}
+
+.header_contact_paragraph {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color:  #202242;
+    margin-bottom: 2.2rem;
+}
+
+.header_contact_call-point {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background-color:  rgba(32, 34, 66, 0.31);
+        left: 50%;
+    }
+}
+
+.header_contact_button {
+    padding: 1rem 2rem;
+    background-color:  #ffe13e;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.header_contact_call-number {
+    font-size: 2rem;
+    color:  #202242;
+    font-weight: 700;
+}
+
+.header_contact_call-number {
+    font-family: 'lato', sans-serif;
+}
+
+.header_banner {
+    background-image: url("../img/banners/layer.png"),url("../img/banners/banner.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20rem 0 10rem;
+}
+
+.banner_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.banner_heading {
+    text-align: center;
+    font-family: Rockwell;
+    font-size: 4.8rem;
+    font-weight: 400;
+    margin-bottom: 3.4rem;
+}
+
+.banner_paragraph {
+    font-size: 3rem;
+    margin-bottom: 6rem;
+}
+
+.banner_icon {
+    margin-bottom: 6rem;
+}
+
+.banner_form {
+    display: flex;
+    padding: 2rem;
+    background-color:  rgba(255, 255, 255, 0.5);
+}
+
+.banner_input,
+.banner_select,
+.banner_button {
+    padding: 2rem;
+    border: none;
+    outline: none;
+}
+
+.banner_select,
+.banner_button {
+    background-color: #ffe13e;
+    font-weight: 700;
+}
+
+.banner_select {
+    padding-right: 4rem;
+}
+
+.banner_button {
+    border-left: 1px solid #fff;
+    color: #fff;
+}
+
+.banner_input {
+   position: relative;
+   transition: all 0.25s;
+
+   &:hover,
+   &:focus {
+       border-bottom: 2px solid #ffe13e;
+   } 
+}
+
+@media only screen and (max-width: 1040px) {
+   .header_nav {
+       flex-direction: column;
+       padding: 2rem 0;
+   }
+
+   .header_list-item:after {
+        content: none;
+   }
+
+   .banner_form {
+       flex-direction: column;
+   }
+
+   .banner_button {
+       border: none;
+   }
+}
+
+@media only screen and (max-width: 490px) {
+    .header_nav {
+        position: fixed;
+        z-index: 3;
+        width: 100%;
+        left: 0;
+        flex-direction: row;
+        padding: 2rem 0;
+   }
+   
+    .header_mobile-icon-menu {
+        float: right;
+        display: block;
+        background-image: url("../img/icons/ham-menu.png");
+        height: 35px;
+        width: 35px;
+        background-size: cover;
+        position: relative;
+        z-index: 3;
+        transition: all 0.25s;
+    }
+
+    .header_mobile-icon-menu_cross-active {
+        transform: rotate(180deg);
+        background-image: url("../img/icons/cross.png");
+    }
+
+    .header_list-item {
+        text-align: center;
+        overflow: hidden;
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        top: 0;
+        transform: translateX(100%);
+        transition: all 0.25s;
+    }
+
+    .header_list-item_active {
+        transform: translateX(0);
+    }
+
+    .header_item {
+        margin: 1rem 0;
+    }
+
+    .active-link {
+        color: #202242;
+    }
+
+    .header_item-link {
+        padding: 1rem 0;
+        display: block;
+        font-size: 2rem;
+
+        &:focus {
+            background-color: #ffe13e; 
+        }
+    }
+
+    .header_contact {
+        display: none;
+    }
+
+    .header_banner {
+        text-align: center;
+    }
+}

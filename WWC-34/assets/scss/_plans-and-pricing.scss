@@ -1,0 +1,49 @@
+.plans-and-pricing-section_container {
+    display: flex;
+    flex-direction: row;
+    padding: 8rem 0;
+    justify-content: space-around;
+}
+
+.plans-and-pricing-section {
+    background-color:  #202242;
+}
+
+.plans-and-pricing-section_heading {
+    margin-bottom: 1rem; 
+    color: #fff;
+}
+
+.our-clients-section_paragraph {
+    color:  #67687b;
+}
+
+.our-clients-section_button {
+    border: none;
+    padding: 3rem 5rem;
+    font-size: 1.8rem;
+    background-color:  #ffe13e;
+    border: 3px solid #fff;
+    font-family: Raleway;
+    font-weight: 700;
+    color:  #202242;
+    cursor: pointer;
+    transition: all 0.25s;
+
+    &:hover,
+    &:focus {
+        color: #fff;
+        background-color: #202242;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .plans-and-pricing-section_container {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .our-clients-section_paragraph {
+        margin-bottom: 3rem;
+    }
+}

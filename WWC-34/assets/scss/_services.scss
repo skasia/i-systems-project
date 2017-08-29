@@ -1,0 +1,114 @@
+.services-section {
+    display: flex;
+}
+
+.services-section_left-column,
+.services-section_right-column {
+    flex: 1;
+    padding: 4rem 0;
+}
+
+.services-section_left-column {
+    background-color:  #202242;
+}
+
+.services-section_right-column {
+    background-color: #ffe13e;
+}
+
+.services-section_left-column_content,
+.services-section_right-column_content {
+    max-width: 400px; 
+    margin: 11rem;
+    text-align: center;
+    color: #fff;
+}
+
+.services-section_left-column_content {
+    float: right;
+}
+
+.services-section_right-column_content {
+    float: left;
+}
+
+.services-section_column_icon {
+    background-image: url("../img/icons/host.png");
+    width: 17rem;
+    height: 17rem;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 5rem;
+}
+
+.icon-text {
+    background: none;
+    width: auto;
+}
+
+.services-section_column_icon-text {
+    font-size: 13rem;
+    font-family: 'lato', sans-serif;
+    color:  #202242;
+}
+
+.services-section_column_heading {
+    margin-bottom: 3rem;
+    white-space: nowrap;
+}
+
+.services-section_column_paragraph {
+    margin-bottom: 3.5rem;
+}
+
+.services-section_column_button {
+    border: 0.25rem solid #fff;
+    color: #fff;
+    font-size: 1.8rem;
+    background-color: #202242;
+    padding: 1.5rem 5rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s;
+
+    &:hover {
+        border-color: #202242;
+        color: #202242;
+        background-color: #ffe13e;
+    }
+}
+
+.services-section_right-column_button {
+    background-color: #ffe13e;
+
+    &:hover {
+        background-color: #202242;
+        color: #ffe13e;
+        border-color: #ffe13e;
+    }
+}
+
+
+
+@media only screen and (max-width: 1040px) {
+    .services-section {
+        flex-direction: column;
+    }
+
+    .services-section_left-column_content,
+    .services-section_right-column_content {
+        max-width: 100%;
+    }
+
+    .services-section_left-column_content,
+    .services-section_right-column_content {
+        margin: 3rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .services-section_column_heading {
+        white-space: normal;
+    }
+}
