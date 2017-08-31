@@ -1,6 +1,6 @@
 header {
-    min-height: 620px;
-    background-image:url('../img/banner/BG.png');
+    min-height: 750px;
+    background-image:url('../img/banner/Shade.png'), url('../img/banner/BG.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -69,21 +69,21 @@ header {
 .banner {
     position: relative;
     padding-top: 8rem;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: 
 
     h1 {
-    .h1_big {
-        font-size: 12rem;
-        font-weight: 900;
-        line-height: 0.78;
-    }
+        .h1_big {
+            font-size: 15rem;
+            font-weight: 900;
+            line-height: 0.78;
+        }
 
-    .h1_small {
-        font-size: 5rem;
-        line-height: 0.9;
-    }
-    }
-
-    img {
-        
+        .h1_small {
+            font-size: 7rem;
+            line-height: 0.9;
+        }
     }
 }

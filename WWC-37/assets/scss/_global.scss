@@ -18,6 +18,7 @@ h1 {
     text-shadow: 5px 0px 10px rgba(0,0,0,.5);   
     position: absolute;
     left: 50%;
-    transform: translateX(-100%);
+    top: 50%;
+    transform: translate(-80%, 30%);
     text-align: center;
 }
