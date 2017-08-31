@@ -1,9 +1,9 @@
 header {
-    min-height: 750px;
-    background-image:url('../img/banner/Shade.png'), url('../img/banner/BG.png');
-    background-size: cover;
+    min-height: 550px;
+    background-image:url('../img/banner/Model Image.png'), url('../img/banner/Shade.png'), url('../img/banner/BG.png');
+    background-size: contain, cover, cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right, center;
 }
 
 .header_nav {
@@ -67,23 +67,44 @@ header {
 }
 
 .banner {
-    position: relative;
-    padding-top: 8rem;
-    background-size: 80%;
+    @include flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 4rem;
+    min-height: 500px;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: 
 
-    h1 {
-        .h1_big {
-            font-size: 15rem;
-            font-weight: 900;
-            line-height: 0.78;
+    .banner-text {
+        @include flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        h1 {
+            margin-bottom: 5.5rem;
+
+            .h1_big {
+                font-size: 15rem;
+                font-weight: 900;
+                line-height: 0.78;
+            }
+
+            .h1_small {
+                font-size: 7rem;
+                line-height: 0.9;
+            }
         }
 
-        .h1_small {
-            font-size: 7rem;
-            line-height: 0.9;
+        button {
+            padding: 1rem 2rem;
+            font-family: 'Lato';
+            color: $fullBlack;
+            border: 0;
+            box-shadow: -4px 11px 40px 0px rgba(0, 1, 1, 0.47);
+            border-radius: 20px;
+            font-size: 2rem;
         }
     }
 }
