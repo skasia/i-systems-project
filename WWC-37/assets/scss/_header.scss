@@ -1,23 +1,29 @@
 header {
     min-height: 620px;
-    background-image: url('../img/banner/BG.png');
+    background-image:url('../img/banner/BG.png');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
 .header_nav {
     @include flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 4rem 0;
 }
 
 .header_nav_logo {
     font-family: 'Lato', sans-serif;
     font-weight: 900;
     color: $fullWhite;
+    font-size: 4rem;
+    text-shadow: 0px 3px 10px rgba(0,0,0,.8)
 }
 
 .header_nav_main-nav {
     @include flex;
+    align-items: flex-end;
 }
 
 .main-nav_list-item {
@@ -26,6 +32,58 @@ header {
         a {
             color: $fullWhite;
             font-size: 1.5rem;
+            padding: 2px 10px;
+            font-weight: 700;
         }
+    }
+}
+
+.main-nav_social-media {
+    @include flex;
+    align-items: flex-end;
+
+    label {
+        padding: 0 1rem;
+        cursor: pointer;
+    }
+
+    input {
+        border: 0;
+        background: rgba(255,255,255,0.2);
+        border-bottom: 1px solid #fff;
+        padding: 2px 10px;
+        outline: none;
+        display: none;
+        transition: all 0.25s;
+    }
+
+    .main-nav_input_active {
+        display: block;
+    }
+
+    a {
+        padding: 0 1rem;
+    }
+}
+
+.banner {
+    position: relative;
+    padding-top: 8rem;
+
+    h1 {
+    .h1_big {
+        font-size: 12rem;
+        font-weight: 900;
+        line-height: 0.78;
+    }
+
+    .h1_small {
+        font-size: 5rem;
+        line-height: 0.9;
+    }
+    }
+
+    img {
+        
     }
 }

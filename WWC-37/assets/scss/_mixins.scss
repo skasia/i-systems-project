@@ -1,6 +1,7 @@
 // font color
 
 $mainColor: #6a6a6a;
+$lowWhiteColor: rgba(255, 255, 255, 0.43);
 $mainHeadingColor: #494949;
 $lowerHeadingColor: #6f6f6e;
 
@@ -26,4 +27,12 @@ $smallElementBg: #bc2e3a;
     display: -ms-flexbox;  
     display: -webkit-flex; 
     display: flex;
+}
+
+@mixin flexVerticalCenter {
+    align-items: center;
+}
+
+@mixin flexHorizontalCenter {
+    justify-content: center;
 }

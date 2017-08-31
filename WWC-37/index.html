@@ -21,7 +21,7 @@
                                 <a href="#">HOME</a>
                             </li>
                             <li>
-                                <a href="#">ABOU US</a>
+                                <a href="#">ABOUT US</a>
                             </li>
                             <li>
                                 <a href="#">TEAM</a>
@@ -40,16 +40,30 @@
                             </li>
                         </ul>
                         <div class="main-nav_social-media">
-                            <span class="main-nav_search">
+                            <input type="text">
+                            <label for="main-nav_search-input">
                                 <img src="assets/img/banner/search.png" alt="facebook-icon">
-                            </span>
-                            <a href="#" class="main-nav_link">
+                            </label>
+                            <a href="#">
                                 <img src="assets/img/banner/fb.png" alt="facebook-icon">
                             </a>
                         </div>
                     </div>
                 </nav>
+                <div class="banner">
+                    <h1>
+                        <span class="h1_big">THINK <br>OUTSIDE<br></span> <span class="h1_small">OF THE BOX</span>
+                    </h1>
+                    <img src="assets/img/banner/Model Image.png">
+                </div>
             </div>
         </header>
     </body>
+    <script type="text/javascript" scr="assets/js/lib/jquery.min.js">
+        $(document).ready(function() {
+            $('.main-nav_social-media').click('label', function() {
+                $(this).parent().find('input').css('display','block');
+            });
+        });
+    </script>
 </html>
