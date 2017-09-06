@@ -16,6 +16,9 @@
                         Agency
                     </a>
                     <div class="header_nav_main-nav">
+                        <span class="mobile-menu">
+                            <img src="assets/img/banner/list.png" alt="menu">
+                        </span>
                         <ul class="main-nav_list-item">
                             <li>
                                 <a href="#">HOME</a>
@@ -60,11 +63,96 @@
                 </div>
             </div>
         </header>
+        <main role="main">
+            <section class="who-we-are">
+                <div class="wrapper">
+                    <div class="who-we-are_container">
+                        <div class="who-we-are_text-box">
+                            <h2>Who we are</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, ex ab similique. Officiis deserunt consequatur dolorum reiciendis, rerum vero labore voluptas, veritatis, in reprehenderit architecto error molestiae sequi. At, nemo.
+                            </p>
+                            <button>READ MORE</button>
+                        </div>
+                        <div class="who-we-are_img-box">
+                            <img src="assets/img/banner/Macbook pro.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="what-we-do">
+                <div class="wrapper">
+                    <div class="what-we-do_container">
+                        <h2>What we do</h2>
+                        <div class="what-we-do_features">
+                            <div class="what-we-do_box">
+                                <div class="features_box">
+                                    <div class="features_box_content">
+                                        <h3>Creative Work</h3>
+                                        <p>Cumque nulla in distinctio explicabo, totam repudiandae blanditiis iure aliquid molestiae, tempora sint dolore.</p>
+                                    </div>
+                                    <div class="features_box_icon">
+                                        <div class="features_icon icon-1"></div>
+                                    </div>
+                                </div>
+                                <div class="features_box">
+                                    <div class="features_box_content">
+                                        <h3>We do Best</h3>
+                                        <p>Cumque nulla in distinctio explicabo, totam repudiandae blanditiis iure aliquid molestiae, tempora sint dolore.</p>
+                                    </div>
+                                    <div class="features_box_icon">
+                                        <div class="features_icon icon-2"></div>
+                                    </div>
+                                </div>
+                                <div class="features_box">
+                                    <div class="features_box_content">
+                                        <h3>Best Company</h3>
+                                        <p>Cumque nulla in distinctio explicabo, totam repudiandae blanditiis iure aliquid molestiae, tempora sint dolore.</p>
+                                    </div>
+                                    <div class="features_box_icon">
+                                        <div class="features_icon icon-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="what-we-do_box">
+                                <div class="features_box">
+                                    <div class="features_box_content">
+                                        <h3>Nice idea</h3>
+                                        <p>Cumque nulla in distinctio explicabo, totam repudiandae blanditiis iure aliquid molestiae, tempora sint dolore.</p>
+                                    </div>
+                                    <div class="features_box_icon">
+                                        <div class="features_icon icon-4"></div>
+                                    </div>
+                                </div>
+                                <div class="features_box">
+                                    <div class="features_box_content">
+                                        <h3>Professional</h3>
+                                        <p>Cumque nulla in distinctio explicabo, totam repudiandae blanditiis iure aliquid molestiae, tempora sint dolore.</p>
+                                    </div>
+                                    <div class="features_box_icon">
+                                        <div class="features_icon icon-5"></div>
+                                    </div>
+                                </div>
+                                <div class="features_box">
+                                    <div class="features_box_content">
+                                        <h3>Great Services</h3>
+                                        <p>Cumque nulla in distinctio explicabo, totam repudiandae blanditiis iure aliquid molestiae, tempora sint dolore.</p>
+                                    </div>
+                                    <div class="features_box_icon">
+                                        <div class="features_icon icon-6"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
     <script type="text/javascript" scr="assets/js/lib/jquery.min.js">
         $(document).ready(function() {
-            $('.main-nav_social-media').click('label', function() {
-                $(this).parent().find('input').css('display','block');
+            $('.mobile-menu').click('img', function() {
+                $(this).parent().find('.main-nav_list-item').slideToggle();
             });
         });
     </script>

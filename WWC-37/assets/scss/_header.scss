@@ -1,16 +1,36 @@
 header {
     min-height: 550px;
-    background-image:url('../img/banner/Model Image.png'), url('../img/banner/Shade.png'), url('../img/banner/BG.png');
-    background-size: contain, cover, cover;
+    background-image: url('../img/banner/BG.png');
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: right, center;
+    background-position: center;
+    position: relative;
+    z-index: 10;
+
+    &:before {
+        content: "";
+        height: 700px;
+        width: 700px;
+        background-image: url('../img/banner/Model Image.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 50px;
+    }
 }
 
 .header_nav {
     @include flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: baseline;
     padding: 4rem 0;
+}
+
+.mobile-menu {
+    display: none;
 }
 
 .header_nav_logo {
@@ -98,13 +118,69 @@ header {
         }
 
         button {
-            padding: 1rem 2rem;
-            font-family: 'Lato';
             color: $fullBlack;
-            border: 0;
-            box-shadow: -4px 11px 40px 0px rgba(0, 1, 1, 0.47);
-            border-radius: 20px;
-            font-size: 2rem;
         }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    header {
+        &:before {
+            content: none;
+        }
+    }
+
+    .banner {
+        align-items: center;
+    }
+
+    .header_nav_main-nav {
+        flex-direction: row-reverse;    
+        align-items: flex-start;
+    }
+
+    .mobile-menu {
+        display: block;
+        position: relative;
+        margin-left: 10px;
+        
+        
+        img {
+            width: 22px;
+        }
+    }
+
+    .main-nav_list-item {
+        position: absolute;
+        margin-top: 85px;
+        padding-left: 20px;
+        top: 0px;
+        bottom: 0;
+        right: 0;
+        background: rgba(0,0,0,.5);
+        flex-direction: column;
+        padding: 10px 5px;
+
+        li {
+            line-height: 2;
+        }
+    }
+
+    .main-nav_social-media {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 676px) {
+    .banner .banner-text h1 .h1_big {
+        font-size: 10rem;
+        font-weight: 900;
+        line-height: 0.78;
+    }
+
+    .banner .banner-text h1 .h1_small {
+        font-size: 4rem;
+        font-weight: 900;
+        line-height: 0.78;      
     }
 }

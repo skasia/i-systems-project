@@ -1,0 +1,63 @@
+.who-we-are {
+    position: relative;
+    z-index: 8;
+    overflow: hidden;
+
+    &:before {
+        content: "";
+        top: -80%;
+        right: -20%;
+        position: absolute;
+        z-index: 0;
+        background-color:  #171717;
+        width: 1089px;
+        height: 900px;
+        transform: rotate(45deg);
+    }
+}
+
+.who-we-are_container {
+    @include flex;
+    flex-direction: row;
+
+    p {
+        margin-bottom: 7.5rem;
+    }
+
+    button {
+        background-color: $smallElementBg;
+        color: $fullWhite;
+    }
+
+    .who-we-are_img-box {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .who-we-are {
+        &:before {
+            content: none;
+        }
+    }
+
+    .who-we-are_container {
+        flex-direction: column;    
+    }
+
+    .who-we-are_text-box {
+        h2 ,p {
+            text-align: center;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .who-we-are_img-box {
+        display: none;
+    }
+}
